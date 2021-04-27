@@ -8,12 +8,12 @@ let prefix = '%';
 let licznik = 0;
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('C:/Users/skuza/Desktop/Glowne Projekty/Discord-Bot/src/commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('C:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands').filter(file => file.endsWith('.js'));
 
 
 for(const file of commandFiles){
 
-  const command = require(`C:/Users/skuza/Desktop/Glowne Projekty/Discord-Bot/src/commands/${file}`);
+  const command = require(`C:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands/${file}`);
   client.commands.set(command.name, command);
 
 }

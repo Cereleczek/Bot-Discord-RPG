@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const configjson = require('C:/Users/skuza/Desktop/Glowne Projekty/Discord-Bot/config.json');
+const configjson = require('C:/Bot-Discord-RPG/Bot-Discord-RPG/config.json');
 
 module.exports = { 
     

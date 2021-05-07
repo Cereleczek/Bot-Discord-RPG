@@ -1,6 +1,6 @@
 const mysql = require('mysql')
 const fs = require('fs');
-const config = require("./config/config.js");
+const config = require("C:/bot_token/config.js");
 const chalk = require("chalk");
 const Discord = require('discord.js');
 
@@ -8,12 +8,12 @@ let prefix = '%';
 let licznik = 0;
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('C:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('F:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands').filter(file => file.endsWith('.js'));
 
 
 for(const file of commandFiles){
 
-  const command = require(`C:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands/${file}`);
+  const command = require(`F:/Bot-Discord-RPG/Bot-Discord-RPG/src/commands/${file}`);
   client.commands.set(command.name, command);
 
 }

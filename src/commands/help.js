@@ -12,7 +12,8 @@ poopdimension - send you to poopdimension\n\n
 rainbow - send rainbow gif\n\n
 show everything - show every record from database \n\n
 show city [country name] - show city, matching to country \n\n
-show country [city name] - show country matching to city
+show country [city name] - show country matching to city \n\n
+equip [ItemID] - equips item with this id onto your character
         \`\`\``)
         
     },

@@ -28,7 +28,7 @@ module.exports = {
               sqlcon.query(`SELECT * FROM monsters WHERE monster_id = '${random}'`, (err, result) => {
               
                 let data = result.map(v => { 
-                  msg.channel.send(`\`\`\`${v.monster_name} - ${v.monster_hp} - ${v.monster_dmg}\`\`\``)
+                  msg.channel.send(`\`\`\` Wylosowano: ${v.monster_name}, posiada on ${v.monster_hp}hp i zadaje ${v.monster_dmg} damage!\`\`\``)
           
                 });
               });
